@@ -78,30 +78,38 @@ The use of the term `n-1` is commonly referred to as Bessel's correction. Note, 
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-base-dmeanstdev
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var dmeanstdev = require( '@stdlib/stats-base-dmeanstdev' );
+dmeanstdev = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dmeanstdev@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var dmeanstdev = require( 'path/to/vendor/umd/stats-base-dmeanstdev/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dmeanstdev@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.dmeanstdev;
+})();
+</script>
 ```
 
 #### dmeanstdev( N, correction, x, strideX, out, strideOut )
@@ -218,11 +226,16 @@ var v = dmeanstdev.ndarray( N, 1, x, 2, 1, out, 2, 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var round = require( '@stdlib/math-base-special-round' );
-var Float64Array = require( '@stdlib/array-float64' );
-var dmeanstdev = require( '@stdlib/stats-base-dmeanstdev' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dmeanstdev@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var out;
 var x;
@@ -237,6 +250,11 @@ console.log( x );
 out = new Float64Array( 2 );
 dmeanstdev( x.length, 1, x, 1, out, 1 );
 console.log( out );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -338,17 +356,17 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [standard-deviation]: https://en.wikipedia.org/wiki/Standard_deviation
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/umd
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 <!-- <related-links> -->
 
-[@stdlib/stats/base/dmean]: https://github.com/stdlib-js/stats-base-dmean
+[@stdlib/stats/base/dmean]: https://github.com/stdlib-js/stats-base-dmean/tree/umd
 
-[@stdlib/stats/base/dmeanvar]: https://github.com/stdlib-js/stats-base-dmeanvar
+[@stdlib/stats/base/dmeanvar]: https://github.com/stdlib-js/stats-base-dmeanvar/tree/umd
 
-[@stdlib/stats/base/dstdev]: https://github.com/stdlib-js/stats-base-dstdev
+[@stdlib/stats/base/dstdev]: https://github.com/stdlib-js/stats-base-dstdev/tree/umd
 
 <!-- </related-links> -->
 
