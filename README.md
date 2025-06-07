@@ -288,7 +288,7 @@ console.log( out );
 
 -   <span class="package-name">[`@stdlib/stats-strided/dmean`][@stdlib/stats/strided/dmean]</span><span class="delimiter">: </span><span class="description">calculate the arithmetic mean of a double-precision floating-point strided array.</span>
 -   <span class="package-name">[`@stdlib/stats-base/dmeanvar`][@stdlib/stats/base/dmeanvar]</span><span class="delimiter">: </span><span class="description">calculate the mean and variance of a double-precision floating-point strided array.</span>
--   <span class="package-name">[`@stdlib/stats-base/dstdev`][@stdlib/stats/base/dstdev]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a double-precision floating-point strided array.</span>
+-   <span class="package-name">[`@stdlib/stats-strided/dstdev`][@stdlib/stats/strided/dstdev]</span><span class="delimiter">: </span><span class="description">calculate the standard deviation of a double-precision floating-point strided array.</span>
 
 </section>
 
@@ -380,7 +380,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/stats/base/dmeanvar]: https://github.com/stdlib-js/stats-base-dmeanvar
 
-[@stdlib/stats/base/dstdev]: https://github.com/stdlib-js/stats-base-dstdev
+[@stdlib/stats/strided/dstdev]: https://github.com/stdlib-js/stats-strided-dstdev
 
 <!-- </related-links> -->
 
