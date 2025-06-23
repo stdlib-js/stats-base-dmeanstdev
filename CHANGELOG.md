@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`625686b`](https://github.com/stdlib-js/stdlib/commit/625686b7ac03c5bf31b5b46b9f7497fd1128241a) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`424afa0`](https://github.com/stdlib-js/stdlib/commit/424afa0b52647777021656a290edbc24a3176894) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`0cdbf3c`](https://github.com/stdlib-js/stdlib/commit/0cdbf3cf7d5f3c16907ea70a586a732304b6b41b) - **feat:** add C ndarray interface and refactor implementation for `stats/base/dmeanstdev` [(#7409)](https://github.com/stdlib-js/stdlib/pull/7409) _(by Gururaj Gurram, Athan Reines, stdlib-bot)_
 -   [`76100b0`](https://github.com/stdlib-js/stdlib/commit/76100b038910770cca2f13dd6e715802e3da756c) - **refactor:** update paths _(by Gururaj Gurram)_
